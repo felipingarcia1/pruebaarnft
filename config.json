@@ -24,7 +24,7 @@
         "src": "data/jaioks-logo.gif",
         "alt": "arNFT.js logo"
       },
-      "loadingMessage": "Cargando aguanta..."
+      "loadingMessage": "Diseñando espera..."
     },
     "stats": {
       "createHtml": false

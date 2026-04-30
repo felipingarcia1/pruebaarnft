@@ -5,7 +5,7 @@
         <!-- 
         ATENCIÓN: CAMBIAR EL TÍTULO A ALGO ADECUADO 
         -->
-        <title>Papas a la francesa</title>
+        <title>Tarjeta de presentación Felipe</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=1" />
         <link rel="stylesheet" href="css/nft-style.css" />
     </head>
@@ -15,14 +15,14 @@
         ATENCIÓN: CAMBIAR LA REFERENCIA AL MARCADOR (JPG O PNG) ADECUADO 
         -->
         <a
-            href="felipe.jpg"
+            href="tp_felipe.jpg"
             class="ui marker"
             target="_blank"
         >
         <!-- 
         ATENCIÓN: CAMBIAR EL TEXTO POR ALGO COMO "Imágen de referencia" O DEJAR COMO ESTÁ 
         -->
-            🖼 Imagen de papas
+            🖼 Tarjeta de Presentación
         </a>
         <!-- 
         ATENCIÓN: EL TAG video REQUIERE muted EN IOS POR DEFAULT PARA MOSTRAR EL VIDEO, SE PUEDE INTENTAR
@@ -36,7 +36,7 @@
             <!-- 
             ATENCIÓN: CAMBIAR AL VIDEO ADECUADO 
             -->
-            <source src="felipe.mp4" type="video/mp4" />
+            <source src="tp_felipe.mp4" type="video/mp4" />
         </video>
 
         <script type="importmap">
@@ -59,12 +59,12 @@
             // 
             //    ATENCIÓN: CAMBIAR AL TAMAÑO DE LA REFERENCIA (JPG O PNG) ADECUADO 
             //
-            let width = 640;
-            let height = 480;
+            let width = 1063;
+            let height = 591;
             // 
             //    ATENCIÓN: CAMBIAR AL NOMBRE DEL MARCADOR (JPG O PNG) ADECUADO 
             //
-            ARnft.init(width, height, [["pruebaarnft/nft/felipe"]], [["felipe"]], "config.json", false)
+            ARnft.init(width, height, [["pruebaarnft/nft/tp_felipe"]], [["tp_felipe"]], "config.json", false)
                 .then((nft) => {
                     document.addEventListener("containerEvent", function (ev) {
                         let canvas = document.getElementById("canvas");
@@ -98,13 +98,13 @@
                         //              DEBE QUEDAR ALTO/ANCHO <- CUIDADO, NO ESCRIBIR ANCHO/ALTO 
                         //
                         // Set width, height and width and height number of segments of the PlaneGeometry.
-                        let imgConfig = { w: 1, h: 338/640, ws: 1, hs: 1 };
+                        let imgConfig = { w: 1, h: 720/1280, ws: 1, hs: 1 };
                         // 
                         //    ATENCIÓN: CAMBIAR LA REFERENCIA (2o parámetro, "unla_pasillo") AL MARCADOR ADECUADO 
                         //    ATENCIÓN: CAMBIAR LA ESCALA (3er parámetro, 200) AL VALOR QUE SE REQUIERA 
                         //
                         // Set object in scene, nft to find, scale, plane to draw video on, mostrar sólo en detección o no
-                        nftAddTJS.addVideo("arvideo", "felipe", 200, imgConfig, false);
+                        nftAddTJS.addVideo("arvideo", "tp_felipe", 200, imgConfig, false);
 
                         const tick = () => {
                             sceneThreejs.draw();
