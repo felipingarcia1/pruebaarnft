@@ -66,6 +66,7 @@
             //
             ARnft.init(width, height, [["pruebaarnft/nft/tp_felipe"]], [["tp_felipe"]], "config.json", false)
                 .then((nft) => {
+                    let luz = new THREE.AmbientLIGHT(0xFFFFFF,5)
                     document.addEventListener("containerEvent", function (ev) {
                         let canvas = document.getElementById("canvas");
                         let fov = (0.8 * 180) / Math.PI;
@@ -104,7 +105,8 @@
                         //    ATENCIÓN: CAMBIAR LA ESCALA (3er parámetro, 200) AL VALOR QUE SE REQUIERA 
                         //
                         // Set object in scene, nft to find, scale, plane to draw video on, mostrar sólo en detección o no
-                        nftAddTJS.addVideo("arvideo", "tp_felipe", 300, imgConfig, false);
+                        nftAddTJS.addVideo("arvideo", "tp_felipe", 200, imgConfig, false);
+                        ntfAddTJS.add(luz)
 
                         const tick = () => {
                             sceneThreejs.draw();
